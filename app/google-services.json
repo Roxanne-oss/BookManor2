@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978289571228",
+    "project_id": "bookmanor-b44dd",
+    "storage_bucket": "bookmanor-b44dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978289571228:android:b599f57ad918f59c6fc459",
+        "android_client_info": {
+          "package_name": "za.ac.bookmanor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978289571228-plci3iunhjlf8hdckcv3i8d80anf47qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA41IXs7v_-DvV5NyQAcsO4QYQWj37HJsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978289571228-plci3iunhjlf8hdckcv3i8d80anf47qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
