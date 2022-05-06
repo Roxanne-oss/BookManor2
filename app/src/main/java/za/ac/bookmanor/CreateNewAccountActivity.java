@@ -10,16 +10,13 @@ import android.widget.EditText;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.MessageDigest;
-
+import za.ac.bookmanor.User;
 
 import java.lang.String;
 
 public class CreateNewAccountActivity extends AppCompatActivity{
     //Declarations
-    private String fullName;
-    private String email;
-    private String password;
-    private String hashedPassword;
+
     private String salt;
     EditText name, mail, pswrd, confPswrd;
 
@@ -35,23 +32,7 @@ public class CreateNewAccountActivity extends AppCompatActivity{
         confPswrd = (EditText) findViewById(R.id.editTextTextPassword2);
     }
 
-    //Getters and setters
-    public String getFullName()
-    {
-        return fullName;
-    }
-    public void setFullName(String fullName)
-    {
-        this.fullName = fullName;
-    }
-    public String getEmail()
-    {
-        return email;
-    }
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
+
 
     //Code that executes when create account button is clicked
     public void createAccountButtonClick(View v) throws NoSuchAlgorithmException {
@@ -59,10 +40,11 @@ public class CreateNewAccountActivity extends AppCompatActivity{
         {
             if(pswrd.getText() == confPswrd.getText())
             {
-                setFullName(name.getText().toString());
-                setEmail(mail.getText().toString());
+                User user = new User();
+                User.setFullName(name.getText().toString());
+                User.setEmail(mail.getText().toString());
                 salt = getSalt();
-                hashedPassword = get_SHA_512_SecurePassword(pswrd.getText().toString(), salt);
+                User.setHashedPassword(get_SHA_512_SecurePassword(pswrd.getText().toString(), salt));
             }
         }
     }
