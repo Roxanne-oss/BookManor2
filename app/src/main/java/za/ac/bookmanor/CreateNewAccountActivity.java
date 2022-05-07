@@ -7,6 +7,10 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.MessageDigest;
@@ -19,6 +23,7 @@ public class CreateNewAccountActivity extends AppCompatActivity{
 
     private String salt;
     EditText name, mail, pswrd, confPswrd;
+    private FirebaseDatabase database;
 
 
     @Override
@@ -40,11 +45,19 @@ public class CreateNewAccountActivity extends AppCompatActivity{
         {
             if(pswrd.getText() == confPswrd.getText())
             {
+                //Creates new user and sets the attributes
                 User user = new User();
-                User.setFullName(name.getText().toString());
-                User.setEmail(mail.getText().toString());
-                salt = getSalt();
-                User.setHashedPassword(get_SHA_512_SecurePassword(pswrd.getText().toString(), salt));
+                user.setFullName(name.getText().toString());
+                user.setEmail(mail.getText().toString());
+                salt = getSalt();  //stores the salt in the salt string
+                user.setHashedPassword(get_SHA_512_SecurePassword(pswrd.getText().toString(), salt));  //sets the password using the hashing method
+
+                //getting the instance of the database
+                database = FirebaseDatabase.getInstance();
+
+                DatabaseReference ref = database.getReference("users");
+                ref.push().setValue(user);
+
             }
         }
     }
