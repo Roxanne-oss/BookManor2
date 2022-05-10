@@ -1,6 +1,27 @@
 <resources>
-    <string name="app_name">BookManor</string>
+    <string name="genre_icon1">genre_icon</string>
+    <string name="books_button">Books</string>
+    <string name="genres_button">Genres</string>
+    <string name="folders_button">Folders</string>
+    <string name="menu_books">BOOKS</string>
+    <string name="menu_profile">PROFILE</string>
+    <string name="menu_help">HELP</string>
+    <string name="menu_settings">SETTINGS</string>
+    <string name="menu_exit">EXIT</string>
+    <string name="menu_open">Open Menu</string>
+    <string name="menu_close">Close Menu</string>
+    <string name="profile">profile</string>
+    <string name="title_activity_add_button">AddButton</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_all_genres">AllGenresActivity</string>
     <string name="logo">logo</string>
+    <string name="app_name">BookManor</string>
     <string name="book_manor">Book Manor</string>
     <string name="create_an_account">Create an account</string>
 </resources>
