@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_main);
 
         email = (EditText) findViewById(R.id.edtEmail);
         password = (EditText) findViewById(R.id.edtPassword);
@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(SignInActivity.this, CreateNewAccount.class));
+                startActivity(new Intent(MainActivity.this, CreateNewAccount.class));
             }
         });
 
         directToForgottenPw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SignInActivity.this, "????Really????", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "????Really????", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -105,13 +105,13 @@ public class MainActivity extends AppCompatActivity {
 
                 if(task.isSuccessful())
                 {
-                    Toast.makeText(SignInActivity.this, "Successfully signed in!!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Successfully signed in!!", Toast.LENGTH_LONG).show();
 
-                    startActivity(new Intent(SignInActivity.this, Dashboard.class));
+                    startActivity(new Intent(MainActivity.this, Dashboard.class));
                 }
                 else
                 {
-                    Toast.makeText(SignInActivity.this, "Sign in was unsuccessful due to: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Sign in was unsuccessful due to: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });
