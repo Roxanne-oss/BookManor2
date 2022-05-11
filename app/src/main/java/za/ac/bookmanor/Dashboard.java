@@ -8,37 +8,40 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.MenuItem;
-
-
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //Dashboard Variables
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private Toolbar toolbar;
+    private ActionBarDrawerToggle toggleOnOff;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard);
 
         //Hooks
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        navigationView = findViewById(R.id.nav_view);
 
         //Toolbar
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        //Navigation Drawer Menu
-        navigationView.bringToFront();
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.menu_open ,R.string.menu_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+        //Drawer Menu
+        toggleOnOff = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.menu_open ,R.string.menu_close);
+        drawerLayout.addDrawerListener(toggleOnOff);
+        toggleOnOff.syncState();
 
+        //Navigation
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.bringToFront();
         navigationView.setCheckedItem(R.id.nav_view);
     }
 
@@ -47,7 +50,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
         if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         }
-        super.onBackPressed();
+        else {
+            super.onBackPressed();
+        }
     }
 
     @Override

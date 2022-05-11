@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/layout/activity_create_new_account.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/layout/activity_dashboard.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/layout/home_menu.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Talia/AndroidStudioProjects/BookManor2/app/src/main/res/menu/navigation_menu.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.121" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/drawable/logo_background.xml" value="0.2" />

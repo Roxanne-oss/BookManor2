@@ -11,7 +11,6 @@
     tools:openDrawer="start">
 
 
-
     <!--SLIDE MENU-->
 
     <com.google.android.material.navigation.NavigationView
@@ -41,8 +40,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/appColor"
+                android:clickable="true"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
+                app:fontFamily="@font/alata"
                 app:layout_constrainedHeight="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,11 +52,11 @@
                 app:navigationIcon="@drawable/ic_menu_icon"
                 app:popupTheme="@style/Theme.BookManor"
                 app:title="Book Manor"
-                app:fontFamily= "@font/alata"
                 app:titleMargin="4dp"
                 app:titleMarginStart="90dp"
                 app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
-                app:titleTextColor="#000000" />
+                app:titleTextColor="#000000"
+                android:focusable="true" />
 
             <!--3 BUTTONS-->
             <ImageButton
@@ -185,6 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -228,6 +230,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -286,6 +289,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -328,6 +332,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -385,6 +390,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -427,6 +433,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:clickable="true"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 

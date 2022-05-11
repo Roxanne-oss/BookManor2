@@ -106,8 +106,8 @@ public class MainActivity extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(MainActivity.this, "Successfully signed in!!", Toast.LENGTH_LONG).show();
-
-                    startActivity(new Intent(MainActivity.this, Dashboard.class));
+                    //startActivity(new Intent (MainActivity.this, Dashboard.class));
+                    setContentView(R.layout.activity_dashboard);
                 }
                 else
                 {

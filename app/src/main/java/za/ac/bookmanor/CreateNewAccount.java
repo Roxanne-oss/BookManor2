@@ -149,7 +149,7 @@ public class CreateNewAccount extends AppCompatActivity {
                 {
                     Toast.makeText(CreateNewAccount.this, "Account created successfully!", Toast.LENGTH_LONG).show();
 
-                    startActivity(new Intent(CreateNewAccount.this, MainActivity.class));
+                    startActivity(new Intent (CreateNewAccount.this, MainActivity.class));
                 }
 
                 else
