@@ -24,4 +24,8 @@
     <string name="app_name">BookManor</string>
     <string name="book_manor">Book Manor</string>
     <string name="create_an_account">Create an account</string>
+    <string name="poetry">POETRY</string>
+    <string name="fiction">FICTION</string>
+    <string name="romance">ROMANCE</string>
+    <string name="comedy">COMEDY</string>
 </resources>
