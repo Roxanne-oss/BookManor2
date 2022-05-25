@@ -28,4 +28,13 @@
     <string name="fiction">FICTION</string>
     <string name="romance">ROMANCE</string>
     <string name="comedy">COMEDY</string>
+    <string name="add_genres">ADD GENRE</string>
+    <string name="custom_genre_name">Custom Genre Name</string>
+    <string name="insert_icon">Insert Icon</string>
+    <string name="genre_icon">Genre Icon</string>
+    <string name="num_books_hint">Number of Books Goal for Genre</string>
+    <string name="create_genre">Create Genre</string>
+
+    <string name="new_folder_in_genre">New Folder in Genre</string>
+    <string name="add">Add</string>
 </resources>

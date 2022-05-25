@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGenres" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appColor"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:fontFamily="@font/alata"
+                app:navigationIcon="?attr/actionModeCloseDrawable"
+                app:title="@string/add_genres"
+                app:titleMargin="10dp"
+                app:titleMarginStart="80dp"
+                app:titleTextColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextGenreName"
+                    android:layout_width="355dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:height="60dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:hint="@string/custom_genre_name"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#757575" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/insertIconTextView"
+                        android:layout_width="166dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/alata"
+                        android:text="@string/insert_icon"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/genreIconButton"
+                        android:layout_width="148dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="250dp"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/alata"
+                        android:text="@string/genre_icon"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@android:color/system_neutral1_200"
+                        tools:targetApi="s" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextNumBooks"
+                    android:layout_width="356dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="20dp"
+                    android:height="60dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="@font/alata"
+                    android:hint="@string/num_books_hint"
+                    android:inputType="number"
+                    android:textColorHint="#757575" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/createGenreButton"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/create_genre"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@android:color/system_neutral1_200"
+                    tools:targetApi="s" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/newFolderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/new_folder_in_genre"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/addFolderInGenreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="270dp"
+                    android:text="@string/add"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@android:color/system_neutral1_200"
+                    tools:targetApi="s" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
