@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageAccount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navigationIcon="?attr/actionModeCloseDrawable"
+        app:title="@string/MANAGE_ACCOUNT"
+        app:titleMarginStart="60dp"
+        app:titleTextColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profilePictureImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/profile_icon" />
+
+        <Button
+            android:id="@+id/addProfilePictureButton"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/add_a_profile_picture"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/material_dynamic_neutral80" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/hint_full_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/hint_phone_number"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/updateDetailsButton"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/update_details"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/material_dynamic_neutral80"
+            app:rippleColor="@color/material_dynamic_neutral80" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/delete_account"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/material_dynamic_neutral80" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -78,10 +78,11 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="poetryCardViewClick"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp"
-                    android:focusable="true">
+                    app:cardElevation="8dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -148,12 +149,14 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:onClick="fictionCardViewClick"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <ImageView
                             android:id="@+id/imageView4"
@@ -205,12 +208,13 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/romanceCradView"
+                    android:id="@+id/romanceCardView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:onClick="romanceCardViewClick"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 
@@ -271,6 +275,7 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:onClick="comedyCardViewClick"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp">
 

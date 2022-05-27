@@ -15,10 +15,18 @@
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/font/alata.xml" value="0.14010416666666667" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout-v31/activity_add_genres.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_add_genres.xml" value="0.25" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_all_folders.xml" value="0.25" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_app_info.xml" value="0.21422101449275363" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_create_new_account.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_create_new_account_activty.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_dashboard.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_floating_add.xml" value="0.25" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_folder.xml" value="0.25" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_folders_in_genre.xml" value="0.25" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_manage_account.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_notifications.xml" value="0.264" />
+        <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_settings.xml" value="0.176" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_sign_in.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/roxys/AndroidStudioProjects/BookManor3/app/src/main/res/layout/activity_view_genres.xml" value="0.264" />
