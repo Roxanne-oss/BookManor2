@@ -15,6 +15,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookManor">
         <activity
+            android:name=".ManageProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SingleBookView"
+            android:exported="false" />
+        <activity
+            android:name=".AddFolders"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBook"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewBook"
+            android:exported="false" />
+        <activity
             android:name=".AppInfo"
             android:exported="false" />
         <activity
@@ -40,9 +64,6 @@
             android:exported="false" />
         <activity
             android:name=".AddGenres"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard"
             android:exported="false" />
         <activity
             android:name=".CreateNewAccount"

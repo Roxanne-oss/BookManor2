@@ -69,15 +69,23 @@
                         android:id="@+id/genreIconButton"
                         android:layout_width="148dp"
                         android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/insertIconTextView"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="250dp"
-                        android:layout_marginBottom="6dp"
+                        android:layout_marginStart="139dp"
+                        android:layout_marginBottom="25dp"
                         android:fontFamily="@font/alata"
-                        android:onClick="genreIconButtonClick"
                         android:text="@string/genre_icon"
                         android:textColor="@color/black"
                         app:backgroundTint="@android:color/system_neutral1_200"
                         tools:targetApi="s" />
+
+                    <ImageView
+                        android:id="@+id/genreIconImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@android:drawable/gallery_thumb" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -113,7 +121,6 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/alata"
-                    android:onClick="createGenreButtonClick"
                     android:text="@string/create_genre"
                     android:textColor="@color/black"
                     app:backgroundTint="@android:color/system_neutral1_200"

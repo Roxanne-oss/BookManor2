@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="AddNewBook"
+    android:orientation="vertical"
+    android:background="#EEE9F4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="?attr/actionModeCloseDrawable"
+        app:title="Add Book"
+        app:titleMargin="10dp"
+        app:titleMarginStart="90dp"
+        app:titleTextColor="@color/black"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBookTitle"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/alata"
+                android:text="Book Title: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtBookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtBookTitle"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBookTitle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/alata"
+                android:text="Author: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtBookTitle"
+                android:layout_toRightOf="@+id/txtAuthor"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/txtIllustrator"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAuthor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/alata"
+                android:text="Illustrator: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtIllustrator"
+                android:layout_toRightOf="@+id/txtIllustrator"
+                android:layout_below="@id/edtAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"/>
+
+            <TextView
+                android:id="@+id/txtSelectGenre"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtIllustrator"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:text="Genre: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtGenre"
+                android:layout_below="@+id/edtIllustrator"
+                android:layout_toRightOf="@+id/txtSelectGenre"
+                android:layout_marginTop="10dp"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Genre"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/autoTxtGenreSelection"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtSelectFolder"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSelectGenre"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:text="Folder: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtFolder"
+                android:layout_toRightOf="@+id/txtSelectGenre"
+                android:layout_below="@id/txtGenre"
+                android:layout_marginTop="10dp"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Folder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView
+                    android:id="@+id/autoTxtFolderSelection"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imgPlaceholder"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtFolder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_android_black_24dp" />
+
+            <Button
+                android:id="@+id/btnInsertImage"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPlaceholder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#C5C7C9"
+                android:clickable="true"
+                android:enabled="true"
+                android:text="Insert Image"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtNumberOfPages"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnInsertImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/alata"
+                android:text="Number of pages: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtNumberOfPages"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnInsertImage"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/txtNumberOfPages"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:inputType="number"
+                android:textColorHint="#757575" />
+
+            <TextView
+                android:id="@+id/txtPageLastRead"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNumberOfPages"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/alata"
+                android:text="Page number last read:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtPageLastRead"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtNumberOfPages"
+                android:layout_toRightOf="@id/txtPageLastRead"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:inputType="number"
+                android:textColorHint="#757575" />
+
+
+            <Button
+                android:id="@+id/btnAddBook"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtPageLastRead"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#ECE7F1"
+                android:clickable="true"
+                android:enabled="true"
+                android:text="Add New Book"
+                android:textColor="#000000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/edtPageLastRead"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

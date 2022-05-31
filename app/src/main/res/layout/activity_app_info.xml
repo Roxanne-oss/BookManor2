@@ -74,6 +74,7 @@
             android:layout_marginStart="116dp"
             android:layout_marginEnd="112dp"
             android:layout_marginBottom="89dp"
+            android:contentDescription="@string/logo"
             app:srcCompat="@drawable/logo" />
     </RelativeLayout>
 

@@ -61,7 +61,7 @@
                 android:layout_marginBottom="0dp">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/yesEmailRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="55dp"
@@ -69,22 +69,22 @@
                     android:fontFamily="@font/alata"
                     android:text="@string/yes"
                     android:textColor="#616161"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/noEmailRadioButton"
                     android:layout_width="71dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="80dp"
                     android:layout_marginTop="-110dp"
                     android:fontFamily="@font/alata"
                     android:text="@string/no"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
             </RadioGroup>
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress2"
+                android:id="@+id/emailEditText"
                 android:layout_width="350dp"
                 android:layout_height="48dp"
                 android:layout_alignParentBottom="true"
@@ -117,13 +117,13 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/receiveEmailTextView"
+                android:id="@+id/receiveSmsTextView"
                 android:layout_width="195dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/alata"
-                android:text="@string/receive_an_email"
+                android:text="@string/receive_an_sms"
                 android:textColor="@color/black"
                 android:textSize="23sp" />
 
@@ -139,7 +139,7 @@
                 android:layout_marginBottom="0dp">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/yesSmsRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="55dp"
@@ -150,7 +150,7 @@
                     tools:ignore="TextContrastCheck" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/noSmsRadioButton"
                     android:layout_width="71dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="80dp"
@@ -162,7 +162,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/editTextPhone3"
+                android:id="@+id/phoneEditText"
                 android:layout_width="348dp"
                 android:layout_height="48dp"
                 android:layout_alignParentEnd="true"
@@ -172,7 +172,9 @@
                 android:background="@color/white"
                 android:ems="10"
                 android:hint="@string/hint_phone_number"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:textColorHint="#757575"
+                android:autofillHints="" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
